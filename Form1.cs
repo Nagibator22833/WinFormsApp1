@@ -43,32 +43,32 @@ namespace WinFormsApp1
         {
             g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
         }
-        class Square : Figure
-        {
-            private int sideLength;
-            public Square(int x,int y,int sideLength)
-            {
-                this.x = x;
-                this.y = y;
-                this.sideLength = sideLength;
-
-            }
-            public override void DrawBkack(Graphics g)
-            {
-                g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
-            }
-            public override void HideDrawingBackGround(Graphics g)
-            {
-                g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
-            }
-
-
-        }
+        
 
 
 
     }
+    class Square : Figure
+    {
+        private int sideLength;
+        public Square(int x, int y, int sideLength)
+        {
+            this.x = x;
+            this.y = y;
+            this.sideLength = sideLength;
 
+        }
+        public override void DrawBkack(Graphics g)
+        {
+            g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
+        }
+        public override void HideDrawingBackGround(Graphics g)
+        {
+            g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
+        }
+
+
+    }
 
 
 

@@ -9,7 +9,8 @@ namespace WinFormsApp1
     }
  abstract class Figure
     {
-
+        public int x;
+        public int y;
 
 
 

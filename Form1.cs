@@ -11,7 +11,8 @@ namespace WinFormsApp1
     {
         public int x;
         public int y;
-
+        public abstract void DrawBkack(Graphics g);
+        public abstract void HideDrawingBackGround(Graphics g);
 
 
 

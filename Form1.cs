@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -81,6 +83,29 @@ namespace WinFormsApp1
             this.x=x;
 
              
+        }
+        public override void DrawBkack(Graphics g)
+        {
+            Point[] points =
+            {
+                new Point(x, y - vertDiaglen / 2),
+                new Point(x +horDiaglen / 2, y),
+                new Point(x, y + vertDiaglen / 2),
+                new Point(x - horDiaglen / 2, y)
+            };
+            g.FillPolygon(Brushes.AliceBlue, points);
+        }
+
+        public override void HideDrawingBackGround(Graphics g)
+        {
+            Point[] points =
+              {
+                new Point(x, y - vertDiaglen / 2),
+                new Point(x +horDiaglen / 2, y),
+                new Point(x, y + vertDiaglen / 2),
+                new Point(x - horDiaglen / 2, y)
+            };
+            g.FillPolygon(Brushes.AliceBlue, points);
         }
     }
 

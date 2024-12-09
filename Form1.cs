@@ -51,7 +51,17 @@ namespace WinFormsApp1
                 this.x = x;
                 this.y = y;
                 this.sideLength = sideLength;
+
             }
+            public override void DrawBkack(Graphics g)
+            {
+                g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
+            }
+            public override void HideDrawingBackGround(Graphics g)
+            {
+                g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
+            }
+
 
         }
 

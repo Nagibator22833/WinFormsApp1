@@ -28,7 +28,7 @@ namespace WinFormsApp1
     }
     class Circle : Figure
     {
-        int radius;
+       private int radius;
         public Circle(int x,int y,int radius)
         {
             this.x = x;
@@ -42,6 +42,17 @@ namespace WinFormsApp1
         public override void HideDrawingBackGround(Graphics g)
         {
             g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
+        }
+        class Square : Figure
+        {
+            private int sideLength;
+            public Square(int x,int y,int sideLength)
+            {
+                this.x = x;
+                this.y = y;
+                this.sideLength = sideLength;
+            }
+
         }
 
 

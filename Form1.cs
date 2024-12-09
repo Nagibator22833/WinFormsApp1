@@ -69,7 +69,20 @@ namespace WinFormsApp1
 
 
     }
+   class Romb : Figure
+    {
+        private int horDiaglen;
+        private int vertDiaglen;
+        public Romb(int x,int y,int horDiaglen,int vertDiaglen)
+        {
+            this.y=y;
+            this.horDiaglen=horDiaglen;
+            this.vertDiaglen=vertDiaglen;
+            this.x=x;
 
+             
+        }
+    }
 
 
 

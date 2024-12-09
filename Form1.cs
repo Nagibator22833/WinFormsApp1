@@ -4,6 +4,13 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
+        private Circle Circle;
+        private Square Square;
+        private Romb Romb;
+        
+        
+        
+        
         public Form1()
         {
             InitializeComponent();

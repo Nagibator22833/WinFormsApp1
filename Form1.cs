@@ -7,4 +7,21 @@ namespace WinFormsApp1
             InitializeComponent();
         }
     }
+ abstract class Figure
+    {
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
 }

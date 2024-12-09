@@ -28,8 +28,14 @@ namespace WinFormsApp1
     }
     class Circle : Figure
     {
-
-
+        int radius;
+        public Circle(int x,int y,int radius)
+        {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
+       
     }
 
 

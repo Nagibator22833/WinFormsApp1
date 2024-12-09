@@ -25,10 +25,12 @@ namespace WinFormsApp1
 
         }
 
+    }
+    class Circle : Figure
+    {
 
 
     }
-
 
 
 

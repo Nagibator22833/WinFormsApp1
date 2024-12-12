@@ -30,6 +30,10 @@ namespace WinFormsApp1
                 Circle.x =+ 10;
                 Square.x =+10;
                 Romb.x =+10;
+                Circle.DrawBkack(g);
+                Square.DrawBkack(g);
+                Romb.DrawBkack(g);
+                System.Threading.Thread.Sleep(100);
 
 
 

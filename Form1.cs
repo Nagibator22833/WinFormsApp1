@@ -14,6 +14,9 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+            Circle = new Circle(100, 100, 50);
+            Square = new Square(200,100,50);
+            Romb = new Romb(300, 100, 60, 40); 
         }
     }
  abstract class Figure

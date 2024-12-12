@@ -21,7 +21,17 @@ namespace WinFormsApp1
         }
          private void MoveButton_Click(object sender, EventArgs e)
         {
+           Graphics g = CreateGraphics();
+            for (int i = 0; i < 20; i++)
+            {
+                Circle.HideDrawingBackGround(g);
+                Square.HideDrawingBackGround(g);
+                Romb.HideDrawingBackGround(g);
 
+
+
+
+            }
 
 
 

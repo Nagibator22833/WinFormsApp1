@@ -17,7 +17,24 @@ namespace WinFormsApp1
             Circle = new Circle(100, 100, 50);
             Square = new Square(200,100,50);
             Romb = new Romb(300, 100, 60, 40); 
+
         }
+         private void MoveButton_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    
     }
  abstract class Figure
     {

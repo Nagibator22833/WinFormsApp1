@@ -94,7 +94,7 @@ namespace WinFormsApp1
         }
         public override void HideDrawingBackGround(Graphics g)
         {
-            g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
+            g.FillEllipse(Brushes.White, x - radius, y - radius, 2 * radius, 2 * radius);
         }
         
 
@@ -117,7 +117,7 @@ namespace WinFormsApp1
         }
         public override void HideDrawingBackGround(Graphics g)
         {
-            g.FillRectangle(Brushes.Black, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
+            g.FillRectangle(Brushes.White, x - sideLength / 2, y - sideLength / 2, sideLength, sideLength);
         }
 
 
@@ -156,7 +156,7 @@ namespace WinFormsApp1
                 new Point(x, y + vertDiaglen / 2),
                 new Point(x - horDiaglen / 2, y)
             };
-            g.FillPolygon(Brushes.AliceBlue, points);
+            g.FillPolygon(Brushes.White, points);
         }
     }
 

@@ -17,15 +17,10 @@ namespace WinFormsApp1
             Circle = new Circle(100, 100, 50);
             Square = new Square(200,100,50);
             Romb = new Romb(300, 100, 60, 40);
-            Button moveButton = new Button
-            {
-
-                Location = new Point(10, 10)
-            };
-            moveButton.Click += MoveButton_Click;
-            Controls.Add(moveButton);
+            Shown += (s, e) => MoveButton_Click();
         }
-         private void MoveButton_Click(object sender, EventArgs e)
+        
+         private void MoveButton_Click()
         {
            Graphics g = CreateGraphics();
             for (int i = 0; i < 20; i++)

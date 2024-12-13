@@ -138,7 +138,7 @@ namespace WinFormsApp1
                 new Point(x, y + vertDiaglen / 2),
                 new Point(x - horDiaglen / 2, y)
             };
-            g.FillPolygon(Brushes.AliceBlue, points);
+            g.FillPolygon(Brushes.Black, points);
         }
 
         public override void HideDrawingBackGround(Graphics g)

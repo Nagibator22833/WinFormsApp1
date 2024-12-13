@@ -25,15 +25,14 @@ namespace WinFormsApp1
            Graphics g = CreateGraphics();
             for (int i = 0; i < 20; i++)
             {
-                Circle.HideDrawingBackGround(g);
-                Square.HideDrawingBackGround(g);
-                Romb.HideDrawingBackGround(g);
+                Invalidate();
+
+               
                 Circle.x += 10;
-                Square.x +=10;
-                Romb.x +=10;
-                Circle.DrawBkack(g);
-                Square.DrawBkack(g);
-                Romb.DrawBkack(g);
+                Square.x += 10;
+                Romb.x += 10;
+
+                
                 System.Threading.Thread.Sleep(100);
             }
 
@@ -91,11 +90,11 @@ namespace WinFormsApp1
         }
        public override void DrawBkack(Graphics g)
         {
-            g.FillEllipse(Brushes.White, x - radius, y - radius, 2 * radius, 2 * radius);
+            g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
         }
         public override void HideDrawingBackGround(Graphics g)
         {
-            g.FillEllipse(Brushes.White, x - radius, y - radius, 2 * radius, 2 * radius);
+            g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
         }
         
 

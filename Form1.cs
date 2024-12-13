@@ -66,15 +66,11 @@ namespace WinFormsApp1
         public int y;
         public abstract void DrawBkack(Graphics g);
         public abstract void HideDrawingBackGround(Graphics g);
-        public void MoveRight()
+        public void MoveRight(Graphics g )
         {
-            for (int i = 0; i < 10; i++)
-            {
-                HideDrawingBackGround(null);
-                x += 10;
-                DrawBkack(null);
-                System.Threading.Thread.Sleep(100);
-            }
+            HideDrawingBackGround(g);
+            x += 10;
+            DrawBkack( g);
 
         }
 

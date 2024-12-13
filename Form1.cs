@@ -16,8 +16,14 @@ namespace WinFormsApp1
             InitializeComponent();
             Circle = new Circle(100, 100, 50);
             Square = new Square(200,100,50);
-            Romb = new Romb(300, 100, 60, 40); 
+            Romb = new Romb(300, 100, 60, 40);
+            Button moveButton = new Button
+            {
 
+                Location = new Point(10, 10)
+            };
+            moveButton.Click += MoveButton_Click;
+            Controls.Add(moveButton);
         }
          private void MoveButton_Click(object sender, EventArgs e)
         {
@@ -34,27 +40,33 @@ namespace WinFormsApp1
                 Square.DrawBkack(g);
                 Romb.DrawBkack(g);
                 System.Threading.Thread.Sleep(100);
-
-
-
-
-
             }
 
 
 
 
         }
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+        protected  override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            Circle.DrawBkack(e.Graphics);
+            Square.DrawBkack(e.Graphics);
+            Romb.DrawBkack (e.Graphics);
+            
+           
+        }
+
+
+
+
+
+
+
+
     }
- abstract class Figure
+    abstract class Figure
     {
         public int x;
         public int y;

@@ -91,11 +91,11 @@ namespace WinFormsApp1
         }
        public override void DrawBkack(Graphics g)
         {
-            g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
+            g.FillEllipse(Brushes.White, x - radius, y - radius, 2 * radius, 2 * radius);
         }
         public override void HideDrawingBackGround(Graphics g)
         {
-            g.FillEllipse(Brushes.Black, x - radius, y - radius, 2 * radius, 2 * radius);
+            g.FillEllipse(Brushes.White, x - radius, y - radius, 2 * radius, 2 * radius);
         }
         
 

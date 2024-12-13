@@ -28,9 +28,9 @@ namespace WinFormsApp1
                 Circle.HideDrawingBackGround(g);
                 Square.HideDrawingBackGround(g);
                 Romb.HideDrawingBackGround(g);
-                Circle.x =+ 10;
-                Square.x =+10;
-                Romb.x =+10;
+                Circle.x =+ 40;
+                Square.x =+50;
+                Romb.x =+50;
                 Circle.DrawBkack(g);
                 Square.DrawBkack(g);
                 Romb.DrawBkack(g);

@@ -25,14 +25,12 @@ namespace WinFormsApp1
            Graphics g = CreateGraphics();
             for (int i = 0; i < 20; i++)
             {
-                Invalidate();
-
-               
-                Circle.x += 10;
+                Circle.x += 5;
                 Square.x += 10;
-                Romb.x += 10;
+                Romb.x += 15;
+                Invalidate();
+                Refresh();
 
-                
                 System.Threading.Thread.Sleep(100);
             }
 

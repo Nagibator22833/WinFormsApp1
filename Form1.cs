@@ -19,7 +19,14 @@ namespace WinFormsApp1
 
        private void StartMovingFigures()
         {
-
+            Thread circleThread = new Thread(() =>
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    Circle.MoveRight(CreateGraphics());
+                    Thread.Sleep(200); 
+                }
+            });
 
 
 

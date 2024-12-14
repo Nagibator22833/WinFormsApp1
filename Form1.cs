@@ -14,7 +14,7 @@ namespace WinFormsApp1
             Circle = new Circle(100, 100, 50);
             Square = new Square(200,100,50);
             Romb = new Romb(300, 100, 60, 40);
-            Shown += (s, e) => MoveButton_Click();
+            Shown += (s, e) => StartMovingFigures();
         }
 
        private void StartMovingFigures()
@@ -29,15 +29,26 @@ namespace WinFormsApp1
             });
             Thread square = new Thread(() =>
             {
-                Square.MoveRight(CreateGraphics());
-                Thread.Sleep(200);
+                for (int i = 0; i < 20; i++)
+                {
+                    Square.MoveRight(CreateGraphics());
+                    Thread.Sleep(200);
+                }
+                 
             });
             Thread romb = new Thread(() =>
             {
-                Romb.MoveRight(CreateGraphics());
-                Thread.Sleep(200);
+                for(int i = 0;i < 20; i++)
+                {
+                    Romb.MoveRight(CreateGraphics());
+                    Thread.Sleep(200);
+                }
+               
+            
             });
-
+            circle.Start();
+            square.Start();
+            romb.Start();
 
 
 

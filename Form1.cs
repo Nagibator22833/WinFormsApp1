@@ -19,7 +19,7 @@ namespace WinFormsApp1
 
        private void StartMovingFigures()
         {
-            Thread circleThread = new Thread(() =>
+            Thread circle= new Thread(() =>
             {
                 for (int i = 0; i < 20; i++)
                 {
@@ -32,7 +32,11 @@ namespace WinFormsApp1
                 Square.MoveRight(CreateGraphics());
                 Thread.Sleep(200);
             });
-
+            Thread romb = new Thread(() =>
+            {
+                Romb.MoveRight(CreateGraphics());
+                Thread.Sleep(200);
+            });
 
 
 

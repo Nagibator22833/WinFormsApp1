@@ -27,7 +27,11 @@ namespace WinFormsApp1
                     Thread.Sleep(200); 
                 }
             });
-
+            Thread square = new Thread(() =>
+            {
+                Square.MoveRight(CreateGraphics());
+                Thread.Sleep(200);
+            });
 
 
 

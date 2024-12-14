@@ -7,10 +7,7 @@ namespace WinFormsApp1
         private Circle Circle;
         private Square Square;
         private Romb Romb;
-        
-        
-        
-        
+       
         public Form1()
         {
             InitializeComponent();
@@ -19,27 +16,19 @@ namespace WinFormsApp1
             Romb = new Romb(300, 100, 60, 40);
             Shown += (s, e) => MoveButton_Click();
         }
-        
-         private void MoveButton_Click()
-        {
-           Graphics g = CreateGraphics();
-            for (int i = 0; i < 20; i++)
-            {
-                Circle.x += 5;
-                Square.x += 10;
-                Romb.x += 15;
-                Invalidate();
-                Refresh();
 
-                System.Threading.Thread.Sleep(100);
-            }
+       private void StartMovingFigures()
+        {
+
+
+
+
+
 
 
 
 
         }
-
-
         protected  override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -49,13 +38,6 @@ namespace WinFormsApp1
             
            
         }
-
-
-
-
-
-
-
 
     }
     abstract class Figure

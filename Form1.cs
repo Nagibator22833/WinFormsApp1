@@ -11,9 +11,9 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
-            Circle = new Circle(100, 100, 50);
-            Square = new Square(200,100,50);
-            Romb = new Romb(300, 100, 60, 40);
+            Circle = new Circle(100, 50, 50);
+            Square = new Square(100,170,50);
+            Romb = new Romb(100, 300, 100, 100);
             Shown += (s, e) => StartMovingFigures();
         }
 
